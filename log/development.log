@@ -6747,3 +6747,190 @@ Processing by ProdutosController#index as HTML
 Completed 200 OK in 30ms (Views: 21.1ms | MongoDB: 0.0ms | Allocations: 10192)
 
 
+Started GET "/produtos" for ::1 at 2020-07-20 17:44:01 -0300
+Processing by ProdutosController#index as HTML
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14580 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x14560 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 20:44:01.28 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002503545>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_development"}
+MONGODB | [7] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.000s
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered produtos/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1021)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.9ms | Allocations: 290)
+Completed 200 OK in 72ms (Views: 33.6ms | MongoDB: 0.0ms | Allocations: 19345)
+
+
+Started GET "/produtos/new" for ::1 at 2020-07-20 17:44:03 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (Duration: 13.6ms | Allocations: 5648)
+  Rendered produtos/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 5970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.4ms | Allocations: 128)
+Completed 200 OK in 23ms (Views: 21.6ms | MongoDB: 0.0ms | Allocations: 9676)
+
+
+Started POST "/produtos" for ::1 at 2020-07-20 17:44:21 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"authenticity_token"=>"xAbbVrm+Bzm8fJu72tzBljFv2QXHzLmH+4xFYlB+JOvwYrQKC50rjU0M4p0AqXpwXyUQFp34PBfHeBEwBWr0HA==", "produto"=>{"sku"=>"Teste Desafio 6", "nome"=>"Luana 6", "descricao"=>"Criacao de produto para testes do desafio 6", "quantidade"=>"1", "preco"=>"1", "codigo_barra"=>"12345678"}, "commit"=>"Create Produto"}
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (Duration: 3.0ms | Allocations: 1594)
+  Rendered produtos/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1675)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.2ms | Allocations: 118)
+Completed 200 OK in 15ms (Views: 12.0ms | MongoDB: 0.0ms | Allocations: 6011)
+
+
+Started POST "/produtos" for ::1 at 2020-07-20 17:44:29 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"authenticity_token"=>"wF/rIWI5d7ks/o7QhOgBoNvUigOBchx2Da6MFwNg7UdOQjJ31dbvJO8jwhoy5meiA7/QXIFIt/71kUHwuew1TA==", "produto"=>{"sku"=>"Abcdf", "nome"=>"Luana 6", "descricao"=>"Criacao de produto para testes do desafio 6", "quantidade"=>"1", "preco"=>"1", "codigo_barra"=>"12345678"}, "commit"=>"Create Produto"}
+MONGODB | [8] localhost:27017 #1 | desafiob2w_development.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f16022de1d96107a552b372'), "sku"=>"Abcdf", "nome"=>"Luana 6", "descricao"=>"Criacao de produto para testes do desafio 6", "quantidade"=>1, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered...
+MONGODB | [8] localhost:27017 | desafiob2w_development.insert | SUCCEEDED | 0.001s
+Completed 500 Internal Server Error in 12ms (MongoDB: 0.0ms | Allocations: 5498)
+
+
+  
+NoMethodError (undefined method `csv' for ReportController:Class):
+  
+app/controllers/produtos_controller.rb:32:in `block in create'
+app/controllers/produtos_controller.rb:30:in `create'
+Started POST "/produtos" for ::1 at 2020-07-20 17:45:01 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"authenticity_token"=>"wF/rIWI5d7ks/o7QhOgBoNvUigOBchx2Da6MFwNg7UdOQjJ31dbvJO8jwhoy5meiA7/QXIFIt/71kUHwuew1TA==", "produto"=>{"sku"=>"Abcdf", "nome"=>"Luana 6", "descricao"=>"Criacao de produto para testes do desafio 6", "quantidade"=>"1", "preco"=>"1", "codigo_barra"=>"12345678"}, "commit"=>"Create Produto"}
+MONGODB | [9] localhost:27017 #1 | desafiob2w_development.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f16024de1d96107a552b373'), "sku"=>"Abcdf", "nome"=>"Luana 6", "descricao"=>"Criacao de produto para testes do desafio 6", "quantidade"=>1, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered...
+MONGODB | [9] localhost:27017 | desafiob2w_development.insert | SUCCEEDED | 0.000s
+MONGODB | [10] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "$db"=>"desafiob2w_development"}
+MONGODB | [10] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.039s
+MONGODB | [11] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_development"}
+MONGODB | [11] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/produtos/5f16024de1d96107a552b373
+Completed 302 Found in 55ms (MongoDB: 0.0ms | Allocations: 9371)
+
+
+Started GET "/produtos/5f16024de1d96107a552b373" for ::1 at 2020-07-20 17:45:02 -0300
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"5f16024de1d96107a552b373"}
+MONGODB | [12] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{"_id"=>BSON::ObjectId('5f16024de1d96107a552b373')}, "$db"=>"desafiob2w_development"}
+MONGODB | [12] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.000s
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.9ms | Allocations: 121)
+Completed 200 OK in 12ms (Views: 8.9ms | MongoDB: 0.0ms | Allocations: 5480)
+
+
+Started GET "/produtos" for ::1 at 2020-07-20 17:45:03 -0300
+Processing by ProdutosController#index as HTML
+MONGODB | [13] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_development"}
+MONGODB | [13] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered produtos/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 738)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.4ms | Allocations: 128)
+Completed 200 OK in 15ms (Views: 10.2ms | MongoDB: 0.0ms | Allocations: 6895)
+
+
+Started GET "/produtos/5f15c8ade1d961a40b6ec66a/edit" for ::1 at 2020-07-20 17:45:05 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"5f15c8ade1d961a40b6ec66a"}
+MONGODB | [14] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{"_id"=>BSON::ObjectId('5f15c8ade1d961a40b6ec66a')}, "$db"=>"desafiob2w_development"}
+MONGODB | [14] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.000s
+  Rendering produtos/edit.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (Duration: 6.7ms | Allocations: 1579)
+  Rendered produtos/edit.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.2ms | Allocations: 119)
+Completed 200 OK in 18ms (Views: 15.4ms | MongoDB: 0.0ms | Allocations: 6684)
+
+
+Started GET "/produtos" for ::1 at 2020-07-20 17:45:07 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered produtos/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 738)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.2ms | Allocations: 128)
+Completed 200 OK in 24ms (Views: 9.8ms | MongoDB: 0.0ms | Allocations: 4734)
+
+
+Started DELETE "/produtos/5f16024de1d96107a552b373" for ::1 at 2020-07-20 17:45:23 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7SaXz2bPgXFg0eDgSBPSDz6R0LzdRRf96DnH4Jf/C6xjO06Z0SAZ7KMMrCr+HbQN5vqK491/vHUQBgoHLXPTpw==", "id"=>"5f16024de1d96107a552b373"}
+MONGODB | [15] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{"_id"=>BSON::ObjectId('5f16024de1d96107a552b373')}, "$db"=>"desafiob2w_development"}
+MONGODB | [15] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+MONGODB | [16] localhost:27017 #1 | desafiob2w_development.delete | STARTED | {"delete"=>"produtos", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5f16024de1d96107a552b373')}, "limit"=>1}], "ordered"=>true, "$db"=>"desafiob2w_development"}
+MONGODB | [16] localhost:27017 | desafiob2w_development.delete | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/produtos
+Completed 302 Found in 9ms (MongoDB: 0.0ms | Allocations: 6570)
+
+
+Started GET "/produtos" for ::1 at 2020-07-20 17:45:23 -0300
+Processing by ProdutosController#index as HTML
+MONGODB | [17] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_development"}
+MONGODB | [17] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered produtos/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 651)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.6ms | Allocations: 129)
+Completed 200 OK in 13ms (Views: 8.7ms | MongoDB: 0.0ms | Allocations: 7180)
+
+
+Started GET "/produtos/5f16022de1d96107a552b372/edit" for ::1 at 2020-07-20 17:45:24 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"5f16022de1d96107a552b372"}
+MONGODB | [18] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{"_id"=>BSON::ObjectId('5f16022de1d96107a552b372')}, "$db"=>"desafiob2w_development"}
+MONGODB | [18] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+  Rendering produtos/edit.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (Duration: 4.4ms | Allocations: 1597)
+  Rendered produtos/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.3ms | Allocations: 118)
+Completed 200 OK in 17ms (Views: 14.4ms | MongoDB: 0.0ms | Allocations: 6445)
+
+
+Started PATCH "/produtos/5f16022de1d96107a552b372" for ::1 at 2020-07-20 17:45:27 -0300
+Processing by ProdutosController#update as HTML
+  Parameters: {"authenticity_token"=>"BJ/ZpT7pcuybqAryhJ2JwCmUKSV0vlrQmJK2D4ZbuVZThOSxczTH4wbVfqwMxp2P5G3s4v+m+hL7tf3HQBKJwQ==", "produto"=>{"sku"=>"Abcdfdd", "nome"=>"Luana 6", "descricao"=>"Criacao de produto para testes do desafio 6", "quantidade"=>"1", "preco"=>"1.0", "codigo_barra"=>"12345678"}, "commit"=>"Update Produto", "id"=>"5f16022de1d96107a552b372"}
+MONGODB | [19] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{"_id"=>BSON::ObjectId('5f16022de1d96107a552b372')}, "$db"=>"desafiob2w_development"}
+MONGODB | [19] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.000s
+MONGODB | [20] localhost:27017 #1 | desafiob2w_development.update | STARTED | {"update"=>"produtos", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5f16022de1d96107a552b372')}, "u"=>{"$set"=>{"sku"=>"Abcdfdd"}}}], "ordered"=>true, "$db"=>"desafiob2w_development"}
+MONGODB | [20] localhost:27017 | desafiob2w_development.update | SUCCEEDED | 0.001s
+MONGODB | [21] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "$db"=>"desafiob2w_development"}
+MONGODB | [21] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+MONGODB | [22] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_development"}
+MONGODB | [22] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/produtos/5f16022de1d96107a552b372
+Completed 302 Found in 34ms (MongoDB: 0.0ms | Allocations: 7469)
+
+
+Started GET "/produtos/5f16022de1d96107a552b372" for ::1 at 2020-07-20 17:45:27 -0300
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"5f16022de1d96107a552b372"}
+MONGODB | [23] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{"_id"=>BSON::ObjectId('5f16022de1d96107a552b372')}, "$db"=>"desafiob2w_development"}
+MONGODB | [23] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 13ms (Views: 8.2ms | MongoDB: 0.0ms | Allocations: 4867)
+
+
+Started GET "/produtos" for ::1 at 2020-07-20 17:45:29 -0300
+Processing by ProdutosController#index as HTML
+MONGODB | [24] localhost:27017 #1 | desafiob2w_development.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_development"}
+MONGODB | [24] localhost:27017 | desafiob2w_development.find | SUCCEEDED | 0.001s
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered produtos/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered search/_form.html.erb (Duration: 0.3ms | Allocations: 128)
+Completed 200 OK in 18ms (Views: 11.4ms | MongoDB: 0.0ms | Allocations: 6988)
+
+

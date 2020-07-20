@@ -214,3 +214,127 @@ MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[loca
 MONGODB | Topology type 'Unknown' changed to type 'Single'.
 MONGODB | [7] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f15e30ce1d961de0250dd62'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
 MONGODB | [7] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.000s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14020 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x14000 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 20:55:02.46 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002802008>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f1604a6e1d9610ec1423c57'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [7] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.000s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14000 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x13980 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 20:55:38.523 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001882397>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "$db"=>"desafiob2w_test"}
+MONGODB | [7] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [8] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_test"}
+MONGODB | [8] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [9] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f1604cae1d9610f3ce1a994'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [9] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.000s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14000 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x13980 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 20:56:42.107 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001701196>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "$db"=>"desafiob2w_test"}
+MONGODB | [7] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [8] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_test"}
+MONGODB | [8] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [9] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f16050ae1d9610ffd2be819'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [9] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.001s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14000 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x13980 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 20:57:16.325 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001897037>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "$db"=>"desafiob2w_test"}
+MONGODB | [7] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [8] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_test"}
+MONGODB | [8] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [9] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f16052ce1d9611052769f82'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [9] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.003s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14000 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x13980 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 20:57:31.76 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002230754>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "$db"=>"desafiob2w_test"}
+MONGODB | [7] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [8] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_test"}
+MONGODB | [8] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [9] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f16053be1d9611097a280a5'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [9] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.001s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14000 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x13980 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 21:08:45.46 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001758833>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true, "$db"=>"desafiob2w_test"}
+MONGODB | [7] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [8] localhost:27017 #1 | desafiob2w_test.find | STARTED | {"find"=>"produtos", "filter"=>{}, "$db"=>"desafiob2w_test"}
+MONGODB | [8] localhost:27017 | desafiob2w_test.find | SUCCEEDED | 0.000s
+MONGODB | [9] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f1607dde1d961139265b52d'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [9] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.000s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14020 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x14000 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 21:09:06.555 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002483807>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f1607f2e1d96113f93fd5d0'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [7] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.000s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x14020 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x14000 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2020-07-20 21:09:16.634 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001539469>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | desafiob2w_test.insert | STARTED | {"insert"=>"produtos", "documents"=>[{"_id"=>BSON::ObjectId('5f1607fce1d961143d2fc67f'), "sku"=>"abcd-efgh", "nome"=>"Luana Oliveira", "descricao"=>"TDD", "quantidade"=>2, "preco"=>1.0, "codigo_barra"=>12345678}], "ordered"=>true, "$db"=>"desafiob2w_t...
+MONGODB | [7] localhost:27017 | desafiob2w_test.insert | SUCCEEDED | 0.000s
