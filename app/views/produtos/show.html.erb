@@ -25,5 +25,10 @@
   <%= @produto.preco %>
 </p>
 
+<p>
+  <strong>Codigo Barra:</strong>
+  <%= @produto.codigo_barra %>
+</p>
+
 <%= link_to 'Editar', edit_produto_path(@produto) %> |
 <%= link_to 'Voltar', produtos_path %>

@@ -2,7 +2,8 @@ require 'test_helper'
 
 class ProdutosControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @produto = produtos(:one)
+    produtos_url = 'localhost:3000/produtos'
+    # @produto = produtos(:one)
   end
 
   test "should get index" do
