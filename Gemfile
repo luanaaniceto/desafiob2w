@@ -49,3 +49,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mongoid', '~> 7.0.5'
+
+gem 'redis'
+gem 'redis-namespace'
+gem 'redis-rails'
+gem 'redis-rack-cache'
+gem "elasticsearch", '~> 7'
+gem 'elasticsearch-model', '~> 7'
+gem 'elasticsearch-rails', '~> 7'
+gem 'elasticsearch-persistence', '~> 7'

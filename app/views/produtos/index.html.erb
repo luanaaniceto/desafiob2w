@@ -17,14 +17,14 @@
   <tbody>
     <% @produtos.each do |produto| %>
       <tr>
-        <td><%= produto.sku %></td>
-        <td><%= produto.nome %></td>
-        <td><%= produto.descricao %></td>
-        <td><%= produto.quantidade %></td>
-        <td><%= produto.preco %></td>
-        <td><%= link_to 'Detalhar', produto %></td>
-        <td><%= link_to 'Editar', edit_produto_path(produto) %></td>
-        <td><%= link_to 'Deletar', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= produto["sku"] %></td>
+        <td><%= produto["nome"] %></td>
+        <td><%= produto["descricao"] %></td>
+        <td><%= produto["quantidade"] %></td>
+        <td><%= produto["preco"] %></td>
+        <td><%= link_to 'Detalhar', produto_path(produto["_id"]["$oid"]) %></td>
+        <td><%= link_to 'Editar', edit_produto_path(produto["_id"]["$oid"]) %></td>
+        <td><%= link_to 'Deletar', '/produtos/'+produto["_id"]["$oid"], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

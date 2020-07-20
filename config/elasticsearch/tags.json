@@ -1,0 +1,23 @@
+{
+"mappings": {
+    "produto":{
+      "properties": {
+        "nome": {
+          "type": "text"
+        },
+        "sku": {
+          "type": "text"
+        },
+        "descricao": {
+          "type": "text"
+        },
+        "quantidade": {
+          "type": "integer"
+        },
+        "preco": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}
