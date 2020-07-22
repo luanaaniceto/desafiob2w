@@ -29,7 +29,7 @@ class ProdutosController < ApplicationController
 
     respond_to do |format|
       if @produto.save
-        create_csv
+        csv
         format.html { redirect_to @produto, notice: 'Produto criado com sucesso.' }
         format.json { render :show, status: :created, location: @produto }
       else
@@ -44,7 +44,7 @@ class ProdutosController < ApplicationController
   def update
     respond_to do |format|
       if @produto.update(produto_params)
-        create_csv
+        csv
         format.html { redirect_to @produto, notice: 'Produto atualizado com sucesso.' }
         format.json { render :show, status: :ok, location: @produto }
       else
@@ -58,7 +58,7 @@ class ProdutosController < ApplicationController
   # DELETE /produtos/1.json
   def destroy
     @produto.destroy
-    create_csv
+    csv
     respond_to do |format|
       format.html { redirect_to produtos_url, notice: 'Produto deletado com sucesso.' }
       format.json { head :no_content }
@@ -76,7 +76,7 @@ class ProdutosController < ApplicationController
       params.require(:produto).permit(:sku, :nome, :descricao, :quantidade, :preco, :codigo_barra)
     end
 
-    def create_csv
+    def csv
       report = ReportController.new
       report.csv
     end

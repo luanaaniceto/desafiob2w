@@ -280,6 +280,7 @@ DEPENDENCIES
   elasticsearch-model (~> 7)
   elasticsearch-persistence (~> 7)
   elasticsearch-rails (~> 7)
+  faraday
   jbuilder (~> 2.7)
   listen (~> 3.2)
   mongoid (~> 7.0.5)

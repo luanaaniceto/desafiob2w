@@ -1,10 +1,3 @@
-_id,sku,nome,codigo_barra,preco
-5f15e0fde1d961d95752971f,abcd-efgh,Luana Oliveira,12345678,1.0
-5f15e185e1d961dae87a4ce4,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
-5f15e2c3e1d961dd0ed5524b,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
-5f15e30ce1d961de0250dd62,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
-5f1604a6e1d9610ec1423c57,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
-5f1604cae1d9610f3ce1a994,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
-5f16050ae1d9610ffd2be819,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
-5f16052ce1d9611052769f82,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
-5f16053be1d9611097a280a5,abcd-efgh,Luana Oliveira,TDD,2,1.0,12345678
+_id,sku,nome,descricao,quantidade,preco,codigo_barra
+5f175363e1d961de8a2a387e,sendEmail,Luana Oliveira,Teste,10,2.0,12345678
+5f176b9ae1d961de8a2a387f,sendEmailDois,Luana Aniceto,Criacao de produto para testes do desafio,123,3.0,123456789
